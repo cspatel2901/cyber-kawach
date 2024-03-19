@@ -1,0 +1,303 @@
+{% load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redstore ecommercs website desing</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+<div class="header">
+
+    <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="index.html"><img src="https://rsanimesh.github.io/images/logo.png" width="150px"></a>
+     </div> 
+     <nav> 
+        <ul id="menuItmes">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="{% url 'login' %}">Account</a></li>
+        </ul>
+     </nav> 
+     <a href="{% url 'cart' %}"><img src="https://icon-library.com/images/cart-icon-transparent/cart-icon-transparent-18.jpg" width="30px" height="30px" > </a>
+     <img src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png" class="menu-icon" onclick="menutoggle()"> 
+    </div>
+</div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Give Your Workout <br> A New Style!</h1>
+            <p>Success is Not always about greatness. It about consistency. constant <br> hard work gain success. Greatness will come.</p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="https://png.pngtree.com/background/20230519/original/pngtree-room-in-an-empty-store-full-of-picture-image_2654849.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+<!---- featured categories ---->
+<div class="categories">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-3"> <img src="https://blackberrys.com/cdn/shop/files/printed-casual-shirt-in-white-ross-blackberrys-clothing-1.jpg?v=1685957839" width="250px" height="250px"></div>
+        <div class="col-3"><img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2314424/2018/5/24/95a0cd9f-6de6-454d-82d5-0c6661a0aa551527134341605-HRX-by-Hrithik-Roshan-Men-Black-Slim-Advanced-Rapid-Dry-Raglan-T-shirt-3181527134341337-1.jpg" width="250px" height="250px"></div>
+        <div class="col-3"><img src="https://theindianthreads.com/cdn/shop/products/2117-DARK-BLUE-3.jpg?v=1650312996&width=1445" width="250px" height="250px"></div>
+        
+    </div>
+    </div>
+</div>
+<!---- featured products-->
+<div class="small-container">
+    <h2 class="title">featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+           <a href="{% url 'products_details' %}"><img src="{% static 'images\Picsart_24-03-17_12-01-48-675.png' %} " width="200px" height="200px" ></a>
+           <a href="products_details.html"><h4>Print Shirt</h4></a>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+           <a href="{% url 'products_details2f' %}" ><img src="https://theindianthreads.com/cdn/shop/products/2117-DARK-BLUE-3.jpg?v=1650312996&width=1445 " width="200px" height="200px" ></a>
+            <h4>Print Shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+           <a href="{% url 'products_details3f' %}"> <img src="https://theindianthreads.com/cdn/shop/products/2117-DARK-BLUE-3.jpg?v=1650312996&width=1445 " width="200px" height="200px" ></a>
+            <h4>Print Shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="https://theindianthreads.com/cdn/shop/products/2117-DARK-BLUE-3.jpg?v=1650312996&width=1445 " width="200px" height="200px" >
+            <h4>Print Shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+    <h2 class="title">latest products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="https://theindianthreads.com/cdn/shop/products/2117-DARK-BLUE-3.jpg?v=1650312996&width=1445 " width="200px" height="200px" >
+            <h4>Print Shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="https://theindianthreads.com/cdn/shop/products/2117-DARK-BLUE-3.jpg?v=1650312996&width=1445 " width="200px" height="200px" >
+            <h4>Print Shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="try hudi-1.jpg" width="200px" height="200px" >
+            <h4>Print Shirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="try shirt-1.jpg" width="200px" height="200px" >
+            <h4>Fancy Tshirt</h4>
+            <div class="rating">
+            <i class="fa fa-star-o"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_t-shirts_for_men_15_8_2022/definitely_not_yellow_t-shirt_for_men_base_15_6_2023_700x933.jpg" width="200px" height="200px" >
+                <h4>Fancy Tshirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/a/8/tr:w-300,/a866838NK_BULLM00010478_2.jpg" width="200px" height="200px" >
+                <h4>Print Tshirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRUku37uzs_OeofZr8D-ptiRR1CUU7dwpcQZHPlTMiz1e0V15f8YfkT_qBiV-s0HF38vckSmeIMPyg9bXVxe6TAhaI6VTESUdfZVLikW15GH8l5LSGSat-3tg&usqp=CAE " width="200px" height="200px" >
+                <h4>Plane Tshirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTRljUzzsyXGT1jX6m2g9CGAwvfjx1XgqJu9_4y-AoIcn1CLky5l1oPphk-RPDhk5yCSUlqQtv-K0GVAvNiQh5ngbQHFOWsVsFGMGYFcux6PDNGUKQd_W4X&usqp=CAE " width="200px" height="200px" >
+                <h4>Print Shirt</h4>
+                <div class="rating">
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--offer-->
+ <div class="offer">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-2">
+            <img src="https://bclassy.in/cdn/shop/products/BS-006.jpg?v=1664265672" class="offer-img ">
+        </div>
+        <div class="col-2">
+            <p>Exclusively Available on redstore</p>
+            <h1>Fancy shirt</h1>
+            <small>A fancy shirt exudes sophistication with its intricate design and luxurious fabric. Perfect for special occasions or upscale events, it elevates any ensemble with its refined style and attention to detail. Embrace elegance and make a statement with a fancy shirt that effortlessly captures the essence of timeless fashion.</small>
+            <a href="" class="btn">Buy Now &#8594;</a>
+        </div>
+    </div>
+    </div>
+ </div>
+
+{% comment %} <!----- testimonial --->  {% endcomment %}
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lauren Ipsu is a simply dummy text of the printing and text typesetting industry. Lauren Ipsu has been the industry standard. dummy texts ever.</p>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="https://media.licdn.com/dms/image/C4E03AQHo8bPZC2qbRg/profile-displayphoto-shrink_800_800/0/1516155680502?e=2147483647&v=beta&t=GmanbdZTq6zARLu1W7REbUayxhPp-VW7SdBZC0DPitg" >
+                <h3>sean peaker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lauren Ipsu is a simply dummy text of the printing and text typesetting industry. Lauren Ipsu has been the industry standard. dummy texts ever.</p>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="https://media.licdn.com/dms/image/C4E03AQHo8bPZC2qbRg/profile-displayphoto-shrink_800_800/0/1516155680502?e=2147483647&v=beta&t=GmanbdZTq6zARLu1W7REbUayxhPp-VW7SdBZC0DPitg" >
+                <h3>sean peaker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>Lauren Ipsu is a simply dummy text of the printing and text typesetting industry. Lauren Ipsu has been the industry standard. dummy texts ever.</p>
+                <div class="rating">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_t-shirts_for_men_15_8_2022/definitely_not_yellow_t-shirt_for_men_base_15_6_2023_700x933.jpg" >
+                <h3>sean peaker</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- brands-->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Godrej_Logo.svg/2560px-Godrej_Logo.svg.png" >
+            </div>
+            <div class="col-5">
+                <img src="https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Coca-Cola_Logo_Design_History_Evolution_11_1024x1024.jpg?v=1693457627" >
+            </div>
+            <div class="col-5">
+                <img src="https://www.shutterstock.com/image-vector/paypal-multinational-financial-technology-payment-260nw-2276341185.jpg" >
+            </div>
+            <div class="col-5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/OPPO_LOGO.jpg" >
+            </div>
+            <div class="col-5">
+                <img src="https://images.philips.com/is/image/PhilipsConsumer/Philips_Wordmark-ALI-global?wid=700&$jpglarge$&fit=crop" >
+            </div>
+        </div>
+    </div>
+</div>
+<!----footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Dwonload Our App</h3>
+                <p>Download app for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Logo.wine.svg" >
+                    <img src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="https://rsanimesh.github.io/images/logo.png" >
+                <p>Power purpose is to sustainability make the pleasure and benefit of export accessible to many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+               <ul>
+                <li>coupons</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>You Tube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2024 - Cyber कवच</p>
+    </div>
+</div>
+{% comment %} <!--- js for toggle menu ---> {% endcomment %}
+   <script>
+    var menuItmes = document.getElementById("menuItmes");
+      
+    menuItems.style.maxHeight = "0px";
+
+    function  menutoggle(){
+        if(menuItmes.style.maxHeight == "0px")
+        {
+            menuItmes.style.maxHeight= "200px";
+        }
+        else
+        {
+            menuItmes.style.maxHeight= "0px";
+         }
+    }
+
+    
+    {
+        "api_code": "PRAYATNA_4a379877dba14a8892e2209c8c5fa027"
+    }
+
+   </script> 
+
+</body>
+</html>

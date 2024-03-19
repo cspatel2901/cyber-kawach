@@ -1,0 +1,165 @@
+{% load static%}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All products - Redstore </title>
+    <link rel="stylesheet" href="href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+    <div class="navbar">
+     <div class="logo">
+        <a href="index.html"><img src="https://rsanimesh.github.io/images/logo.png" width="150px"></a>
+     </div>
+     <nav>
+        <ul id="menuItmes">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="login.html">Account</a></li>
+        </ul>
+     </nav> 
+     <img src="https://icon-library.com/images/cart-icon-transparent/cart-icon-transparent-18.jpg" width="30px" height="30px" >  
+     <img src="https://cdn0.iconfinder.com/data/icons/rounded-basics/24/rounded__menu-512.png" class="menu-icon" onclick="menutoggle()"> 
+    </div> 
+    <!---cart items details-->
+    <div class="small-container catr-page">
+        <table>
+            <tr>
+                <th>Products</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://ttbazaar.com/cdn/shop/products/ts148-red-1.jpg?v=1623760046" >
+                        <div>
+                        <p>Printed T-shirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://ttbazaar.com/cdn/shop/products/ts148-red-1.jpg?v=1623760046" >
+                        <div>
+                        <p>Printed T-shirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="https://ttbazaar.com/cdn/shop/products/ts148-red-1.jpg?v=1623760046" >
+                        <div>
+                        <p>Printed T-shirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$50.00</td>
+            </tr>
+
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$235.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+
+<!----footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Dwonload Our App</h3>
+                <p>Download app for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="https://www.logo.wine/a/logo/Google_Play/Google_Play-Logo.wine.svg" >
+                    <img src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" >
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="https://rsanimesh.github.io/images/logo.png" >
+                <p>Power purpose is to sustainability make the pleasure and benefit of export accessible to many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+               <ul>
+                <li>coupons</li>
+                <li>Blog Post</li>
+                <li>Return policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>You Tube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2024 - Cyber कवच</p>
+    </div>
+</div>
+<!--- js for toggle menu --->
+   <script>
+    var menuItmes = document.getElementById("menuItmes");
+      
+    menuItems.style.maxHeight = "0px";
+
+    function  menutoggle(){
+        if(menuItmes.style.maxHeight == "0px")
+        {
+            menuItmes.style.maxHeight= "200px";
+        }
+        else
+        {
+            menuItmes.style.maxHeight= "0px";
+         }
+    }
+
+   </script> 
+
+</body>
+</html>
